@@ -1,0 +1,88 @@
+<script id="instagramImportSection" type="text/html">
+<div id="instagram_import_by_url" style="display:none;margin-bottom:15px">
+	<hr style="clear:both;">
+	<div class="media-browse-headr top">
+		<div class="sheet-wrap">
+			<img class="instagram-account-avatar plugin_avatar" width="21" height="21" />
+				<strong class="instagram-account-name"></strong>
+				<br>
+			Select a photo from <a href="#" id="instagram-switch-list" title="Import one or more photos from your latest uploads">your latest uploads</a> or enter a <a href="#" id="instagram-switch-page" title="Import photo by enterings its Instagram page URL">page url</a>.
+		</div>
+	</div>
+	<hr style="clear:both;">
+	<div class="sheet-wrap">
+		<div class="section-content">
+			<ul class="table">
+				<li>
+					<span class="cell label">
+						<label for="">Instagram URL</label>
+					</span>
+					<span class="cell">
+						<input class="field col-wide" id="valid_instagram_url" placeholder="http://instagram.com/photoid" />
+						<span class="form-error-msg" style="display: none;">Please enter a valid Instagram url</span>
+					</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="instagram_import_username" style="display:none;margin-bottom:15px">
+	<hr>
+	<div class="sheet-wrap">
+		<div class="section-content" style="margin-top:15px;">
+			<ul class="table">
+				<li>
+					<span class="cell">
+						Authenticate plugin
+					</span>
+					<span class="cell">
+						<button href="#" class="button sm" id="instagram-add-username">
+							Connect with Instagram
+						</button>
+					</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="instagram_import_loading" class="plugin_event" style="display:none">
+<hr>
+<div class="sheet-wrap true">
+<div class="inner">
+	<span class="kspinner ks_tiny ks_tiny_offset"></span>Hang on, fetching Instagram content...
+</div>
+</div>
+</div>
+<div id="instagram_import_api_list" style="display:none">
+<hr style="clear:none;">
+<div class="media-browse-headr">
+	<div class="sheet-wrap">
+		<img class="instagram-account-avatar plugin_avatar" width="21" height="21" />
+			<strong class="instagram-account-name"></strong>
+			<br>
+		Select a photo from <a href="#" id="instagram-switch-list" title="Import one or more photos from your latest uploads">your latest uploads</a> or enter a <a href="#" id="instagram-switch-page" title="Import photo by enterings its Vimeo page URL">page url</a>.
+	</div>
+</div>
+<div id="inst-browse-middle-scroll" class="sheet-middle no-pad media-browse-middle" data-bind="scrollbar: true">
+<div class="media-browse-viewr">
+<ul class="plugin_content grid_150"></ul>
+</div>
+</div>
+</div>
+</script>
+
+<script id="instagramSettingsEditTop" type="text/html">
+	<div class="row">
+		<div class="left">
+			<label>Account</label>
+		</div>
+		<div class="mid">
+			<div class="mid-range">
+				<div class="auth_profile" id="instagram-settings-target">
+
+				</div>
+			</div>
+		</div>
+	</div>
+</script>

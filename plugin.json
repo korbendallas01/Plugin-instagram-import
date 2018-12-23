@@ -1,0 +1,62 @@
+{
+	"name": "Instagram Import",
+	"version": "1.5.7",
+	"description": "Imports images from Instagram to the Koken library.",
+	"description_long": "These settings will apply to all newly imported images from Instagram.",
+	"demo": "http://koken.me",
+	"author": {
+		"name": "Koken",
+		"link": "https://store.koken.me/authors/koken"
+	},
+
+	"koken_version_required": "0.18.0",
+
+	"data": {
+		"access_token": {
+			"type": "hidden"
+		},
+
+		"user_id": {
+			"type": "hidden"
+		},
+
+		"autotag": {
+			"label": "Assign \"instagram\" tag to all imported images",
+			"type": "boolean",
+			"header": "Image metadata",
+			"value": false,
+			"info": "This will assign a Koken tag named \"instagram\" to everything imported from Instagram. Handy for viewing all imported Instagram images on your site."
+		},
+
+		"title": {
+			"label": "Assign title from Instagram title",
+			"type": "boolean",
+			"value": true,
+			"info": "Copies the full Instagram image's title and assigns it as the imported image's title."
+		},
+
+		"tags": {
+			"label": "Assign tags from Instagram title",
+			"type": "boolean",
+			"value": false,
+			"info": "Many Instagram users include #hashtags at the end of their titles when posting images. This option detects those hashtags, creates new Koken tags to match, then assigns the tags to the imported image. This allows your imported images to maintain the same tagging criteria used at Instagram."
+		},
+
+		"strip_tags": {
+			"label": "Strip tags from Instagram title",
+			"type": "boolean",
+			"value": false,
+			"info": "Removes all #hashtags from the Instagram title. We only recommend using this if you append #hashtags to the end of your titles.",
+			"dependencies": {
+				"evaluate": "all",
+				"conditions": [
+					{
+						"option": "title",
+						"equals": true
+					}
+				]
+			}
+		}
+
+	}
+}
